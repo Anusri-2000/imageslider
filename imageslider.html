@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            overflow: hidden;
+            height: 200px;
+            width: 500px;
+        }
+        .container img{
+            height:200px;
+            width:500px;
+        }
+        .but{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont" class="container">
+    <img src="download (1).jfif">
+    <img src="download (18).jfif">
+    <img src="download (2).jfif">
+    <img src="download.jfif">
+    </div>
+    <div class="but">
+    <button id="bt1">next</button>
+    <button id="bt2">Previous</button>
+    </div>
+</body>
+<script>
+    let currentindex=0;
+
+let cont=document.getElementById("cont");
+document.getElementById("bt1").addEventListener('click',() =>{
+
+cont.forEach((anu,index)=>{
+
+index=currentindex;
+cont.currentindex=currentindex+1;
+})
+})
+document.getElementById("bt2").addEventListener('click',()=>{
+
+})
+</script>  
+</html>
